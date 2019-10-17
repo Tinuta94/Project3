@@ -92,12 +92,12 @@ body {
   }
   .singletype {
       margin-bottom: 20px;
-      width: 400px;
-      display: flex;
+      width: 360px;
+      /* display: flex;
       align-content: center;
       justify-content: center;
       justify-items: center;
-      align-items: center;
+      align-items: center; */
     margin-left: 80px;
       margin-top: 20px
   }
