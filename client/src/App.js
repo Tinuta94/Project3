@@ -12,7 +12,7 @@ function App() {
     <div className="App">
        
       <Router>
-      <AppBar position="static" style={{backgroundColor: "black"}}>
+      <AppBar position="static" style={{backgroundColor: "#394053"}}>
         <Tabs value="" onChange="" aria-label="simple tabs example" >
         
         <Link to="/" class="link"><Tab label="Home" /></Link>
