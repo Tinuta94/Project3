@@ -10,7 +10,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 
@@ -123,22 +122,22 @@ export default class SingleType extends Component {
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             {this.state.type.name} <br></br>
-                                          
-                            
+
+
 
                                         </Typography>
 
                                     </CardContent>
                                     <Button variant="contained" onClick={this.handleToggleEditForm}>
-                                                Edit
-                        </Button>  &nbsp;  &nbsp; 
+                                        Edit
+                        </Button>  &nbsp;  &nbsp;
                                             <Button variant="contained" onClick={this.handleDeleteType}>
-                                                Delete
+                                        Delete
                         </Button>
                                 </div>
                             </CardActionArea>
                         </Card>
-                        
+
                     </div>
 
 

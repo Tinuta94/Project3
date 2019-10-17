@@ -50,17 +50,17 @@ export default class WatchItem extends Component {
                                         {this.state.watchItem.item && this.state.watchItem.item.name} <br></br>
                                         {this.state.watchItem.item && this.state.watchItem.item.year}<br></br>
                                         <br></br>
-                                       
+
                                     </Typography>
 
                                 </CardContent>
-                               
+
                             </div>
 
                         </CardActionArea>
                     </Card>
                     <div class="watchdeleteitem">
-                    <Button variant="contained" onClick={this.handleRemoveFromWatch} >Delete </Button>
+                        <Button variant="contained" onClick={this.handleRemoveFromWatch} >Delete </Button>
                     </div>
                 </div>
 
