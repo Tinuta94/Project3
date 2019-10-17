@@ -4,7 +4,7 @@
 }
 h1 {
     margin-left: -60px;
-    font-size: 30px;
+    font-size: 25px;
 }
 .typephoto {
     width: 100px;
@@ -20,7 +20,7 @@ h1 {
 }
 
 body {
-    background-color: lightcoral
+    background-color: rosybrown
 }
 /* header {
     height: 60px;
@@ -36,30 +36,15 @@ body {
     width: 280px;
   
 }
-/* .all {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-} */
-/* .body {
-    
-        border: darkslategray 3px solid;
-        width: 100vw;
-        height: 93.5vh;
-        margin-left: 0;
-      } */
+
 .firstpart {
-    background-color: pink;
+    background-color: lightblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 400px;
 }
-.watchcomponent {
-    border-top-color: darkslategray 3px solid;
-    background-color: black
-  }
+
   .oneitem {
       display: flex;
       flex-wrap: wrap;
@@ -97,11 +82,6 @@ body {
   .singletype {
       margin-bottom: 20px;
       width: 360px;
-      /* display: flex;
-      align-content: center;
-      justify-content: center;
-      justify-items: center;
-      align-items: center; */
     margin-left: 80px;
       margin-top: 20px
   }
@@ -121,10 +101,10 @@ body {
      width: 280px
   }
   .back {
-      background-color: brown
+      background-color: black
   }
   .backgrdns {
-      background-color: brown
+      background-color: black
   }
   .typesbutton {
       margin-left: 250px
@@ -143,8 +123,12 @@ body {
   h2 {
       display: flex;
       align-content: center;
-      justify-content: center
+      justify-content: center;
+      color: white;
+    
+      font-size: 25px
   }
+  
   .watchlist {
       display: flex;
       flex-wrap: wrap;
@@ -153,4 +137,7 @@ body {
   .link {
       color: white;
       font-size: 30px
+  }
+  .watchdeleteitem {
+      margin-left: 80px
   }
