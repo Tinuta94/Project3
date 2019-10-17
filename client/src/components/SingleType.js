@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import {Redirect, Link} from 'react-router-dom'
 import MoviesList from './MoviesList.js'
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 
 export default class SingleType extends Component {
@@ -71,6 +79,7 @@ export default class SingleType extends Component {
             this.state.isEditFormDisplayed
             ? <form onSubmit={this.handleSubmitChanges}>
                 <label >Type Name</label>
+                
                 <input 
                     id="type-name"
                     type="text"
@@ -89,23 +98,36 @@ export default class SingleType extends Component {
                 <input type="submit" value="Update" />
             </form>
             
-            :<div>
-                <h1>{this.state.type.name}</h1>
-                <img src={this.state.type.imageLink} alt={this.state.type.name} />
-                
-              <div >
+            :<div class="typemovie">
+            <div class="singletype">
+             <Card  >
+                     <CardActionArea>
+                       <CardMedia
+                         component="img"
+                         className="typephoto"
+                         image={this.state.type.imageLink}
+                       />
+                       <CardContent>
+                         <Typography gutterBottom variant="h5" component="h2">
+                        {this.state.type.name}
                         <button onClick={this.handleToggleEditForm}>Edit </button>
                         <button onClick={this.handleDeleteType}>Delete </button>
-                    </div>
+                         </Typography>
+                         
+                       </CardContent>
+                     </CardActionArea>
+                     </Card>
+                     </div>
+               
+                    
                 
-                
-                  
+                  <div class="moviecomp">
                 <MoviesList 
                     type={this.state.type}
                     match={this.props.match}
-                 
                 />
-            </div>
+                </div>
+          </div>
         );
     }
 }
