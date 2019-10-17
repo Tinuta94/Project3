@@ -16,20 +16,20 @@
 }
 
 body {
-    background-color: burlywood
+    background-color: lightcoral
 }
-header {
+/* header {
     height: 60px;
-    background-color: brown;
+    background-color: black;
     font-size: 20px
-}
+} */
 
 .card {
-    border: 3px solid black;
+   
    margin-bottom: 20px;
    margin-left: 20px;
    margin-top: 20px;
-    width: 200px;
+    width: 280px;
   
 }
 /* .all {
@@ -46,20 +46,24 @@ header {
         margin-left: 0;
       } */
 .firstpart {
-    background-color: dimgray;
+    background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 400px;
 }
 .watchcomponent {
-    border-left: darkslategray 3px solid;
-    background-color: burlywood
+    border-top-color: darkslategray 3px solid;
+    background-color: black
   }
-  .contitem {
+  .oneitem {
       display: flex;
       flex-wrap: wrap;
-      align-content: center
+      align-content: center;
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      width: 260px
   }
   .typeslist {
   display: flex;
@@ -73,13 +77,13 @@ header {
   }
   .movcont {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: row;
       justify-content:flex-start;
-      margin-left: 10px;
+      margin-left: 30px;
       margin-right: 20px;
       margin-bottom: 20px;
-      width: 250px;
-      border: 5px solid teal
+      width: 240px;
+     
   }
   .typemovie {
       display: flex;
@@ -94,6 +98,51 @@ header {
       justify-content: center;
       justify-items: center;
       align-items: center;
-      margin-left: 100px;
+    margin-left: 80px;
       margin-top: 20px
+  }
+  .moviebutton {
+      display: flex;
+      align-content: center;
+      margin-left: 80px;
+    
+  }
+  .newmoviebutton {
+      margin-left: 230px;
+      margin-bottom: 30px
+  }
+  .singlemovie {
+      margin-top: 20px;
+      margin-bottom: 30px;
+     width: 280px
+  }
+  .back {
+      background-color: brown
+  }
+  .backgrdns {
+      background-color: brown
+  }
+  .typesbutton {
+      margin-left: 250px
+  }
+  .singlemoviecont {
+      height: 300px
+  }
+  .newtypebutton {
+      margin-left: 140px;
+      margin-bottom: 20px
+  }
+  .update {
+      margin-bottom: 20px;
+      margin-left: 140px
+  }
+  h2 {
+      display: flex;
+      align-content: center;
+      justify-content: center
+  }
+  .watchlist {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center
   }
