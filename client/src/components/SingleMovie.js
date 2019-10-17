@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import { Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 
 export default class SingleMovie extends Component {
@@ -32,16 +40,34 @@ export default class SingleMovie extends Component {
         }
 
         return (
-
-            <div>
-                <div >
-                    <h1>{this.state.movie.name}</h1>
-                    <h3>{this.state.movie.year}</h3>
-                    <img src={this.state.movie.imageLink} alt={this.state.movie.name} />
+       <div class="singlmoviecont">
+            <div class="singlemovie">
+                <Card >
+                     <CardActionArea>
+                       <CardMedia
+                         component="img"
+                         className="typephoto"
+                         image={this.state.movie.imageLink}
+                       />
+                       <div class="back">
+                       <CardContent>
+                         <Typography gutterBottom variant="h5" component="h2">
+                        {this.state.movie.name} <br></br>
+                      </Typography>
+                         
+                       </CardContent>
+                       </div>
+                     </CardActionArea>
+                     </Card>
                 </div>
-                <button onClick={this.handleDeleteMovie}>Delete Listing</button>
-                <button onClick={() => this.props.handleAddToWatch(this.state.movie)}>Add to Your List</button>
-        </div>
+                <Button variant="contained" onClick={this.handleDeleteMovie} >
+        Delete 
+      </Button>  &nbsp; 
+   
+    <Button variant="contained"  onClick={() => this.props.handleAddToWatch(this.state.movie)}>
+        Add To My List
+    </Button>
+                  </div> 
         );
     }
 }
