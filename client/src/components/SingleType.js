@@ -123,19 +123,22 @@ export default class SingleType extends Component {
                                     <CardContent>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             {this.state.type.name} <br></br>
-                                            <Button variant="contained" onClick={this.handleToggleEditForm}>
-                                                Edit
-                        </Button>  &nbsp;
-                        <Button variant="contained" onClick={this.handleDeleteType}>
-                                                Delete
-                        </Button>
+                                          
+                            
 
                                         </Typography>
 
                                     </CardContent>
+                                    <Button variant="contained" onClick={this.handleToggleEditForm}>
+                                                Edit
+                        </Button>  &nbsp;  &nbsp; 
+                                            <Button variant="contained" onClick={this.handleDeleteType}>
+                                                Delete
+                        </Button>
                                 </div>
                             </CardActionArea>
                         </Card>
+                        
                     </div>
 
 
