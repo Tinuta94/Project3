@@ -60,10 +60,11 @@ export default class Brands extends Component {
 
         let typesList = this.state.types.map((type) => {
             return (
-                // <div class="typescontainer">
+             
                 <div class="typescontainer" key={type._id}>
+                     <div class="card">
                     <Link to={`/types/${type._id}`}>
-                   <div class="card">
+                   
                      <Card  >
                      <CardActionArea>
                        <CardMedia
@@ -79,10 +80,11 @@ export default class Brands extends Component {
                        </CardContent>
                      </CardActionArea>
                      </Card>
-                     </div>
+                    
                      </Link>
                    </div>
-               
+                   </div>
+          
             )
         })
 
@@ -95,7 +97,7 @@ export default class Brands extends Component {
                 handleAddNewForm={this.handleAddNewForm}
             />
             : <div>
-                <div >
+                <div class="typeslist">
                     {typesList}
                 </div>
                 <button onClick={this.handleClickAddNew}>Add New type</button>
