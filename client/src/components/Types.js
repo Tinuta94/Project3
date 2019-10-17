@@ -64,7 +64,8 @@ export default class Brands extends Component {
                     <div class="card">
                        <Card  >
                             <CardActionArea>
-                                <Link to={`/types/${type._id}`}>   <CardMedia
+                                <Link to={`/types/${type._id}`}>  
+                                 <CardMedia
                                     component="img"
                                     className="typephoto"
                                     image={type.imageLink}

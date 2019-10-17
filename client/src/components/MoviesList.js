@@ -68,18 +68,18 @@ export default class MoviesList extends Component {
         let moviesList = this.state.movies.map((movie) => {
             return (
                 <div class="movcont" >
-
-
+                    <div class="card">
                     <Card  >
                         <CardActionArea>
                             <Link
                                 key={movie._id}
-                                to={`/types/${this.props.match.params.typeId}/movies/${movie._id}`}
-                            >  <CardMedia
+                                to={`/types/${this.props.match.params.typeId}/movies/${movie._id}`}> 
+                                 <CardMedia
                                     component="img"
                                     className="typephoto"
                                     image={movie.imageLink}
-                                />   </Link>
+                                />   
+                                </Link>
                             <div class="back">
                                 <CardContent>
                                     <Typography gutterBottom variant="h5" component="h2">
@@ -93,7 +93,7 @@ export default class MoviesList extends Component {
 
 
 
-
+</div>
                 </div>
             )
         })
