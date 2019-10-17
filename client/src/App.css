@@ -26,27 +26,25 @@ header {
 
 .card {
     border: 3px solid black;
-    display: flex;
-    flex-direction: row;
    margin-bottom: 20px;
    margin-left: 20px;
    margin-top: 20px;
     width: 200px;
-    height: 250px;
+  
 }
-.all {
+/* .all {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-}
-.body {
+} */
+/* .body {
     
         border: darkslategray 3px solid;
         width: 100vw;
         height: 93.5vh;
         margin-left: 0;
-      }
+      } */
 .firstpart {
     background-color: dimgray;
     display: flex;
@@ -54,7 +52,48 @@ header {
     align-items: center;
     min-width: 400px;
 }
-.cart-component {
+.watchcomponent {
     border-left: darkslategray 3px solid;
-    background-color: teal
+    background-color: burlywood
+  }
+  .contitem {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center
+  }
+  .typeslist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  }
+  .movieslist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .movcont {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:flex-start;
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      width: 250px;
+      border: 5px solid teal
+  }
+  .typemovie {
+      display: flex;
+      flex-direction: column;
+
+  }
+  .singletype {
+      margin-bottom: 20px;
+      width: 400px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      margin-left: 100px;
+      margin-top: 20px
   }
