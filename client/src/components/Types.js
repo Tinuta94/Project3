@@ -63,25 +63,27 @@ export default class Brands extends Component {
              
                 <div class="typescontainer" key={type._id}>
                      <div class="card">
-                    <Link to={`/types/${type._id}`}>
+                    
                    
                      <Card  >
                      <CardActionArea>
-                       <CardMedia
+                     <Link to={`/types/${type._id}`}>   <CardMedia
                          component="img"
                          className="typephoto"
                          image={type.imageLink}
-                       />
+                       />   </Link>
+                        <div class="back">
                        <CardContent>
                          <Typography gutterBottom variant="h5" component="h2">
                          {type.name}
                          </Typography>
                          
                        </CardContent>
+                       </div>
                      </CardActionArea>
                      </Card>
                     
-                     </Link>
+                  
                    </div>
                    </div>
           
@@ -100,7 +102,10 @@ export default class Brands extends Component {
                 <div class="typeslist">
                     {typesList}
                 </div>
-                <button onClick={this.handleClickAddNew}>Add New type</button>
+                <div class="typesbutton">
+                <Button variant="contained" onClick={this.handleClickAddNew}>Add New</Button> <br></br>
+                <br></br>
+              </div>
             </div>
            
         );

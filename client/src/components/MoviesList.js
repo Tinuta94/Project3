@@ -11,6 +11,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+
 export default class MoviesList extends Component {
 
     state = {
@@ -69,29 +70,31 @@ export default class MoviesList extends Component {
             return  (
                 <div class="movcont" >
                     
-                        <Link 
-                            key={movie._id} 
-                            to={`/types/${this.props.match.params.typeId}/movies/${movie._id}`}
-                        >
+                       
                              <Card  >
                      <CardActionArea>
-                       <CardMedia
+                     <Link 
+                            key={movie._id} 
+                            to={`/types/${this.props.match.params.typeId}/movies/${movie._id}`}
+                        >  <CardMedia
                          component="img"
                          className="typephoto"
                          image={movie.imageLink}
-                       />
+                       />   </Link>
+                        <div class="backgrdns">
                        <CardContent>
                          <Typography gutterBottom variant="h5" component="h2">
-                         {this.props.type.name} <br></br>
+                      
                          {movie.name} 
                        
                          </Typography>
                          
                        </CardContent>
+                       </div>
                      </CardActionArea>
                      </Card>
                            
-                        </Link>
+                     
                   
                         
                 </div>
@@ -110,7 +113,14 @@ export default class MoviesList extends Component {
                 <div class="movieslist">
                     {moviesList}
                 </div>
-            <button onClick={this.handleClickAddNewMovieForm}>Add New Movie</button> 
+                <div class="moviebutton">
+                <Button  variant="contained" onClick={this.handleClickAddNewMovieForm} >
+        Add New 
+      </Button>
+      </div> <br></br>
+      <br></br>
+    
+           
             </div>
         )
     }
