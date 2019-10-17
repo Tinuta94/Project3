@@ -81,7 +81,7 @@ body {
   }
   .singletype {
       margin-bottom: 20px;
-      width: 360px;
+      width: 320px;
     margin-left: 80px;
       margin-top: 20px
   }
@@ -101,10 +101,10 @@ body {
      width: 280px
   }
   .back {
-      background-color: black
+      background-color: #394053
   }
   .backgrdns {
-      background-color: black
+      background-color: #394053
   }
   .typesbutton {
       margin-left: 250px
