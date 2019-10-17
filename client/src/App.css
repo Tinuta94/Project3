@@ -8,10 +8,13 @@
 }
 .typescontainer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    align-content: space-between
+   
 }
+
 body {
     background-color: burlywood
 }
@@ -24,12 +27,34 @@ header {
 .card {
     border: 3px solid black;
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
    margin-bottom: 20px;
    margin-left: 20px;
    margin-top: 20px;
-    width: 400px;
+    width: 200px;
     height: 250px;
-
-  
 }
+.all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.body {
+    
+        border: darkslategray 3px solid;
+        width: 100vw;
+        height: 93.5vh;
+        margin-left: 0;
+      }
+.firstpart {
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+}
+.cart-component {
+    border-left: darkslategray 3px solid;
+    background-color: teal
+  }
