@@ -29,7 +29,10 @@ export default class WatchView extends Component {
         return (
         <div>
             <hr></hr>
+            <div class="watchtext">
+              
             <h2>My List</h2>
+            </div>
             <hr></hr>
             <div class="watchlist">
             {watchList}
