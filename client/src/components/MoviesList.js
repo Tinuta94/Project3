@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import NewMovieForm from './NewMovieForm';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 export default class MoviesList extends Component {
 
@@ -59,16 +67,33 @@ export default class MoviesList extends Component {
 
         let moviesList = this.state.movies.map((movie) => {
             return  (
-                <div >
-                    <h5>
+                <div class="movcont" >
+                    
                         <Link 
                             key={movie._id} 
                             to={`/types/${this.props.match.params.typeId}/movies/${movie._id}`}
                         >
-                            {movie.name} - {movie.year}
+                             <Card  >
+                     <CardActionArea>
+                       <CardMedia
+                         component="img"
+                         className="typephoto"
+                         image={movie.imageLink}
+                       />
+                       <CardContent>
+                         <Typography gutterBottom variant="h5" component="h2">
+                         {this.props.type.name} <br></br>
+                         {movie.name} 
+                       
+                         </Typography>
+                         
+                       </CardContent>
+                     </CardActionArea>
+                     </Card>
+                           
                         </Link>
-                    </h5>
-                    <img  src={movie.imageLink} alt={movie.name}/>        
+                  
+                        
                 </div>
             )
         })
@@ -81,8 +106,8 @@ export default class MoviesList extends Component {
                 handleInputChange={this.handleInputChange}
                 handleAddNewForm={this.handleAddNewForm}
             />
-            : <div>
-                <div >
+            : <div class="movielistcontainer">
+                <div class="movieslist">
                     {moviesList}
                 </div>
             <button onClick={this.handleClickAddNewMovieForm}>Add New Movie</button> 
