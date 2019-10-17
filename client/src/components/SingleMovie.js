@@ -56,17 +56,18 @@ export default class SingleMovie extends Component {
                       </Typography>
                          
                        </CardContent>
-                       </div>
-                     </CardActionArea>
-                     </Card>
-                </div>
-                <Button variant="contained" onClick={this.handleDeleteMovie} >
+                       <Button variant="contained" onClick={this.handleDeleteMovie} >
         Delete 
       </Button>  &nbsp; 
    
     <Button variant="contained"  onClick={() => this.props.handleAddToWatch(this.state.movie)}>
         Add To My List
     </Button>
+                       </div>
+                     </CardActionArea>
+                     </Card>
+                </div>
+       
                   </div> 
         );
     }
