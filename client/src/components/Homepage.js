@@ -6,6 +6,7 @@ import SingleType from './SingleType.js';
 import Types from './Types.js'
 import {Route, Switch,Link} from 'react-router-dom'
 import Axios from 'axios'
+import { Container, Row, Col } from 'reactstrap';
 
 
 export default class Homepage extends Component {
@@ -63,6 +64,9 @@ export default class Homepage extends Component {
 
         return (
             <div>
+                  <Container>
+                    <Row className="body">
+                        <Col xs="8" className="firstpart">
                             <Switch>
                                 <Route path="/types/:typeId/movies/:movieId" render={SingleMovieComponent} />
                                 <Route path="/types/:typeId/movies" component={MoviesList} />
@@ -71,11 +75,15 @@ export default class Homepage extends Component {
                                 <Route exact path="/" render={TypesListComponent} />
                             </Switch>
                     
-                        
+                            </Col>
+                        <Col xs="4" className="cart-component">
                                <WatchView
                                 watchItems={this.state.watchItems}
                                 getWatchItems={this.getWatchItems}
                             />
+                               </Col>
+                    </Row>
+                </Container>
                        
             </div>
         );

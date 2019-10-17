@@ -26,16 +26,17 @@ export default class WatchItem extends Component {
 
     render() {
         return (
-        <div>
-            <div>
+        <div class="contitem">
+            <div class="oneitem">
                 <img src={this.state.watchItem.item && this.state.watchItem.item.imageLink} alt=""/>
-                <div >
+              
                     <strong>{this.state.watchItem.item && this.state.watchItem.item.name}</strong>
                     <p>{this.state.watchItem.item && this.state.watchItem.item.year}</p>
+                    <button onClick={this.handleRemoveFromWatch}>Remove from Your List</button>
             </div>
-        </div>
+      
        
-            <button onClick={this.handleRemoveFromWatch}>Remove from Your List</button>
+            
             
         </div>
         );
