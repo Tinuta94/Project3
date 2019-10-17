@@ -54,12 +54,14 @@ export default class WatchItem extends Component {
                                     </Typography>
 
                                 </CardContent>
-                                <Button variant="contained" onClick={this.handleRemoveFromWatch} >Delete </Button>
+                               
                             </div>
 
                         </CardActionArea>
                     </Card>
-                   
+                    <div class="watchdeleteitem">
+                    <Button variant="contained" onClick={this.handleRemoveFromWatch} >Delete </Button>
+                    </div>
                 </div>
 
             </div>
