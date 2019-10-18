@@ -4,7 +4,7 @@
 [Deployed App](https://ancient-temple-64968.herokuapp.com)
 
 
-[Project Board](https://trello.com/b/yhVawXuY/project-3)
+[Trello](https://trello.com/b/yhVawXuY/project-3)
 
 # My Movie World
 
