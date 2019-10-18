@@ -2,6 +2,8 @@
 
 
 [Deployed App](https://ancient-temple-64968.herokuapp.com)
+
+
 [Project Board]()
 
 # My Movie World
@@ -18,9 +20,9 @@ This website will be very useful for people that love watching movies,because it
 - Express.
 
 # ERD
-![alt text]()
+![alt text](https://github.com/Tinuta94/my_project3/blob/master/Screen%20Shot%202019-10-17%20at%207.34.40%20PM.png)
 
 # Wireframes
-![alt text]()
-![alt text]()
-![alt text]()
+![alt text](https://github.com/Tinuta94/my_project3/blob/master/firssst.png)
+![alt text](https://github.com/Tinuta94/my_project3/blob/master/seccoond.png)
+![alt text](https://github.com/Tinuta94/my_project3/blob/master/last.png)
