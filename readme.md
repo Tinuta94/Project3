@@ -1,38 +1,26 @@
-# mehn-template-project
-
-# Setup A New Project From This Template
-
-If you are starting a new project do the following:
-
-1. copy/download this directory to where you new project is located and rename
-   it to the name of your project.
-1. change your directory (`cd`) into the copied project template
-1. `npm install`
-1. `node ./server.js`
-1. In a new terminal run `curl localhost:3000/helloworld`. You should see
-   `hello world!` as the output. From there your server template works!
-1. see the `controllers`, `models`, and `views` directories' `readme.md` files
-
-# Setup A New Project Without This Template
-
-If you want to start a project without using this template directory do the
-following:
+# Project 3
 
 
-1. `mkdir <project-name>`
-1. `cd <project-name>`
-1. `echo "# <project-name>" > readme.md`
-1. `git init`
-1. `git add readme.md `
-1. `git commit -m "init repo with readme.md"`
-1. `npm init`
-1. `npm install express hbs method-override`
-1. `mkdir models views controllers`
-1. `touch ./server.js`
+[Deployed App](https://ancient-temple-64968.herokuapp.com)
+[Project Board]()
 
-# Testing Your Api
+# My Movie World
 
-Run
-    ./testWebAPI -h
-for instructions on how to test your web API. In short this is a BASH script
-wrapper around the `curl` command which is used for making http requests.
+This is an application that allows user to create new movie categories inside of which they can save movies list that correspond to it.Also there is a list "My List" where user can save movies that he wants to watch later.On the first page clicking on the image of a category will take user to movies list page,where user can create/add a new movie to the list.If  user clicks on the image of a single movie,this will take him to the page where he can delete that movie or add it to the list he wants to watch.
+This website will be very useful for people that love watching movies,because it will help keep tracking of all new/best sellers movies and movies they want to watch.
+
+# Technologies used
+- React,
+- HTML, 
+- CSS,
+- Javascript,  
+- Mongo, 
+- Express.
+
+# ERD
+![alt text]()
+
+# Wireframes
+![alt text]()
+![alt text]()
+![alt text]()
